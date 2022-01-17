@@ -1,0 +1,73 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: Roboto-Bold;
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../src/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: DMSans-Bold;
+  src: url(../src/fonts/DMSans-Bold.ttf);
+}
+
+
+@font-face {
+  font-family: DMSans-Regular;
+  src: url(../src/fonts/DMSans-Regular.ttf);
+}
+
+
+body {
+ 
+
+
+  h1 {
+    font-size: 36px
+  }
+    
+  p {
+    font-size: 18px;
+  }
+
+  label {
+    font-family: DMSans-Bold;
+    font-size: 18px;
+    display: block;
+    padding:2% 0; 
+ 
+
+    &:nth-of-type(1) {
+      text-shadow: 0px 2px 5px rgba(4,2,1,0.5);
+
+    }
+  }
+
+  input {
+    color:#8D8D8D;
+    font-family: DMSans-Regular;
+    font-size: 18px;
+    padding: 3%;
+    border-radius: 7px;
+   
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  body {
+    background:url(./assets/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ }
+

@@ -1,0 +1,65 @@
+@import '../../colors';
+
+.hero {
+  background:$main-color;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+
+  h1 {
+    padding-top: 10%;
+  }
+
+
+  .sub_header {
+    color:$second-color;
+    font-family: Roboto-Regular
+  }
+
+  .img_container {
+    // background: url('../../assets/iPhone\ Mockup.png');
+    // background-repeat: no-repeat;
+    // height:800px;
+    margin-top: -30%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .hero {
+  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+    h1 {
+      padding-top: 10%;
+    }
+  
+    .sub_header {
+      color:$second-color;
+    }
+  
+    .img_container {
+      margin-top: -30%;
+    }
+  }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .hero {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+
+  
+    h1 {
+      padding-top: 10%;
+    }
+
+    .img_container {
+      margin-top: -30%;
+    }
+  }
+}
